@@ -12,6 +12,8 @@ namespace _00_CodeChallenge
         {
             char[] characters = "Supercalifragilisticexpialidocious".ToCharArray();
             int characterCount = characters.Length;
+            int eyeCount = 0;
+            int elleCount = 0;
 
             Console.WriteLine($"there are {characterCount} letters in this word");
             foreach (char c in characters)
@@ -19,10 +21,12 @@ namespace _00_CodeChallenge
                 if (c == 'i')
                 {
                     Console.WriteLine("this is an I");
+                    eyeCount++;
                 }
                 else if (c == 'l')
                 {
                     Console.WriteLine("this is an L");
+                    elleCount++;
                 }
                 else
                 {
@@ -30,6 +34,8 @@ namespace _00_CodeChallenge
                 }
                 //Console.WriteLine($"character: {c}");
             }
+
+            Console.WriteLine($"There are {eyeCount} 'I's and {elleCount} 'L's");
 
             Console.ReadKey();
            
